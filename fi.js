@@ -5,7 +5,7 @@ menu.btn.social Hubi
 menu.btn.maps Pelit
 menu.btn.mods Modit
 menu.btn.settings Asetukset
-menu.btn.customize Mukauta
+menu.btn.customize Muokkaa
 menu.btn.invite Kutsu
 menu.btn.invite.clicked Kopioitu
 menu.btn.join Liity
@@ -61,10 +61,10 @@ generic.accuracy Tarkkuus
 player.waiting odotetaan pelaajia
 player.died Kuolit
 player.killed Sinut Tappoi
-player.killstreak {0} on a {1} Kill Streak
+player.killstreak {0} on a {1} Kill Streak pelaajalla on tappoputki
 player.inactive Heitetty ulos toimettomuuden vuoksi
 player.disconnect YHTEYS KATKENNUT
-timer.end Seuraava peli alkaa {0}:n kuluttu
+timer.end Seuraava peli alkaa {0}:n kuluttua
 leaderboard.empty Tyhjä Serveri
 popup.checkpoint Tallennuspiste!
 app.play KLIKKAA PELATAKSESI
@@ -84,8 +84,8 @@ settings.none Asetuksia ei löydetty
 settings.backup Varmuuskopiointiasetukset
 settings.controls.change Näppäinasetukset
 settings.controls.press Paina mitä tahansa näppäintä
-settings.controls.leaderboard InGame Leaderboard Trigger Type
-settings.controls.voicechat Voicechat Trigger Type
+settings.controls.leaderboard InGame Leaderboard Trigger Type tulostaulukko
+settings.controls.voicechat Voicechat Trigger Type aanichatti
 settings.local.header Lokalisointi <span id="requiresRestart"><span style="color: #eb5656">*</span> vaatii uudelleenkäynnistyksen</span>
 settings.local.region Oletusalue
 settings.local.lang Kieli
@@ -121,7 +121,7 @@ settings.dev.forceRegen Regeneroi Pelaaja
 settings.dev.extraBan Lisätietoa Porttikiellosta
 settings.chat.header Chatti
 settings.chat.chat Näytä Chatti
-settings.chat.chat.all Aina
+settings.chat.chat.all aina kaikki
 settings.chat.chat.focus Kun Kohdistettu
 settings.chat.messages Näytä pelaajien viestit
 settings.chat.unboxings Näytä skinien saamisviestit
@@ -649,12 +649,12 @@ windows.secondary.unlocked Avattu
 windows.secondary.customOnly Vain Custom-Peleissä
 windows.secondary.premiumOnly Vain Premiumin Kanssa
 windows.secondary.req Taso {0} Vaadittu
-windows.skins.unlocked Unlocked
-windows.skins.customOnly Customs Only
-windows.skins.premiumOnly Premium Only
-windows.skins.classOnly Req {0}
-windows.skins.req Req lvl {0}
-windows.skins.default Default Skin
+windows.skins.unlocked Unlocked avattu
+windows.skins.customOnly Customs Only  vain customit
+windows.skins.premiumOnly Premium Only vain premium
+windows.skins.classOnly Req {0}  vaatii
+windows.skins.req Req lvl {0} vaatii levelin
+windows.skins.default Default Skin oletus ulkonako
 windows.advertise.header Mainosta
 windows.support.header Tuki
 windows.players.header Pelaajalista
@@ -922,61 +922,61 @@ chall.name.cc Saa {0} läheltä piti-tappoa {1}
 chall.name.rk Saa {0} kostotappoa {1}
 event.doubleXP 2x Class XP enabled for this match
 ranked.join Joined Ranked Match. Abandoning a match will result in a temporary ban
-ranked.progress Game in Progress
-ranked.team Please join a Team
-ranked.switch Can't switch while in-game
-ranked.spectate Spectating Disabled in Ranked
-ranked.login Login to Spawn
-ranked.sync Missing Sync Data
-ranked.team.spawn Please join a Team to Spawn
-ranked.class.spawn Please select a Class to Spawn
-modes.round.win Your Team has secured this round
-modes.round.loss This round is no longer winnable
-modes.round.switch Switching Sides. Prepare for the next Round
-modes.trade.success Trade Successful
-modes.prophunt.limit [Prop Hunt] You are out of prop switches
-modes.prophunt.left [Prop Hunt] You have {0} switches remaining
-modes.prophunt.rotation.on [Prop Hunt] Rotation Enabled
-modes.prophunt.rotation.off [Prop Hunt] Rotation Disabled
-modes.prophunt.rotation.reset [Prop Hunt] Rotation reset.
-commands.login Login to use this command
-commands.connected {0} connected, {1} in menu
-commands.host {0} is the current Host.
-commands.noclip.on Noclip - Enabled
-commands.noclip.off Noclip - Disabled
-commands.god.on God mode - Enabled
-commands.god.off God mode - Disabled
-commands.god.on.other God mode - Enabled for {0}
+ranked.progress Game in Progress peli käynnissä
+ranked.team Please join a Team ole hyvä ja liity tiimiin
+ranked.switch Can't switch while in-game ei voi vaihtaa kesken pelin
+ranked.spectate Spectating Disabled in Ranked katsotaan ei käytössä palkinnollisissa
+ranked.login Login to Spawn kirjaudu jotta voit syntyä
+ranked.sync Missing Sync Data synkronointi data puuttuu
+ranked.team.spawn Please join a Team to Spawn ole hyvä ja liity tiimiin että voit syntyä
+ranked.class.spawn Please select a Class to Spawn valitse loukka syntyäksesi
+modes.round.win Your Team has secured this round sinun tiimisi on voittanut tämän kierroksen varmuudella
+modes.round.loss This round is no longer winnable tämä kierros ei ole enää voitettavissa
+modes.round.switch Switching Sides. Prepare for the next Round valmistaudu seuravaan kierrokseen
+modes.trade.success Trade Successful vaihto onnistui
+modes.prophunt.limit [Prop Hunt] You are out of prop switches sinulta loppui nämä
+modes.prophunt.left [Prop Hunt] You have {0} switches remaining sinulla on {0}vaihtoa jäljellä
+modes.prophunt.rotation.on [Prop Hunt] Rotation Enabled kierto päällä
+modes.prophunt.rotation.off [Prop Hunt] Rotation Disabled kierto pois päältä
+modes.prophunt.rotation.reset [Prop Hunt] Rotation reset. kierron mitätöiminen
+commands.login Login to use this command kirjaudu jotta voit käyttää tätä käskyä
+commands.connected {0} connected, {1} in menu 
+commands.host {0} is the current Host. on tämän hetkinen valvoja
+commands.noclip.on Noclip - Enabled  noclip päällä 
+commands.noclip.off Noclip - Disabled noclip poissa päältä
+commands.god.on God mode - Enabled jumala tila päällä
+commands.god.off God mode - Disabled jumala tila poissa päältä
+commands.god.on.other God mode - Enabled for {0} 
 commands.god.off.other God mode - Disabled for {0}
 commands.smite.on Smite - Enabled
 commands.smite.off Smite - Disabled
 commands.smite.on.other Smite - Enabled for {0}
 commands.smite.off.other Smite - Disabled for {0}
-commands.perk Gave {0} {1}
-commands.maxperk Gave {0} MAX {1}
-commands.unlimited.on Unlimited Ammo - Enabled
-commands.unlimited.off Unlimited Ammo - Disabled
-commands.unlimited.on.other Unlimited Ammo - Enabled for {0}
+commands.perk Gave {0} {1} antoi
+commands.maxperk Gave {0} MAX {1} antoi maksimi määrän
+commands.unlimited.on Unlimited Ammo - Enabled loputtomat ammukset päällä
+commands.unlimited.off Unlimited Ammo - Disabled loputtomat ammukset poissa käytöstä
+commands.unlimited.on.other Unlimited Ammo - Enabled for {0} 
 commands.unlimited.off.other Unlimited Ammo - Disabled for {0}
 commands.spraybypass.on Unlimited Ammo - Enabled
 commands.spraybypass.off Unlimited Ammo - Disabled
 commands.spraybypass.on.other Unlimited Ammo - Enabled for {0}
 commands.spraybypass.off.other Unlimited Ammo - Disabled for {0}
 commands.suspect.invalid Invalid suspect info
-commands.suspect.menu Suspect in menu
-commands.suspect.left Suspect has left
+commands.suspect.menu Suspect in menu epäile menussa
+commands.suspect.left Suspect has left epäilty lähti
 commands.suspect.found Suspect Found. Spectating: {0}, Spawned: {1}, Name: {2}
-commands.forfeit.next Must play atleast 1 round
-commands.forfeit.wait Wait till match starts to forfeit
-commands.forfeit.later Please try again in a few seconds
-commands.forfeit.voted You already voted.
-commands.forfeit.limit You can only start one vote per game
+commands.forfeit.next Must play atleast 1 round pakko pelata vähintään yksi kierros
+commands.forfeit.wait Wait till match starts to forfeit odota että matsi alkaa jotta voit forfeit
+commands.forfeit.later Please try again in a few seconds ole hyvä ja yritä uudelleen muutaman sekunnin kuluttua
+commands.forfeit.voted You already voted. olet äänestänyt jo
+commands.forfeit.limit You can only start one vote per game voit äänestää vain kerran pelissä
 commands.forfeit.ended Forfeiting Game
 commands.forfeit.ended.other Other Team Forfeited
-server.message.join {0} joined the game
-server.message.left {0} left the game
-server.message.kicked {0} was kicked
-server.message.banned {0} was banned
-server.message.votekicked {0} was vote kicked
-server.message.arrested {0} was arrested by the K.P.D
+server.message.join {0} joined the game liityi peliin
+server.message.left {0} left the game lähti pelistä
+server.message.kicked {0} was kicked potkittiin ulos
+server.message.banned {0} was banned bännättiin
+server.message.votekicked {0} was vote kicked oli potkittu ulos äänestyksen avulla
+server.message.arrested {0} was arrested by the K.P.D pidätettiin kpd:n toimesta
 `;
